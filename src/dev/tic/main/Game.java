@@ -64,14 +64,14 @@ public class Game implements Runnable{
 				arr[i][j] = i + j + (x++);
 			}
 		}
-		System.out.println("Array Initilized");
+		
 	}
 	
 	public synchronized void start()
 	{
 		if(running) return;
 		
-		System.out.println("Game thread started");
+		
 		running = true;
 		
 		thread = new Thread(this);
@@ -83,7 +83,7 @@ public class Game implements Runnable{
 		if(!running) return;
 		
 		running = false;
-		System.out.println("Game thread stopped" + " "+ isFull());
+		
 		Display.setButtonsNotEnabled();
 		
 		try {

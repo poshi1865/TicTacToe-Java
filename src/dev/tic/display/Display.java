@@ -147,7 +147,7 @@ public class Display extends JFrame {
 			b[i].setIcon(null);
 			b[i].setEnabled(true);
 		}
-		System.out.println("Buttons are enabled");
+		
 		turn = 0;
 		
 		setGameOverLabel("");
